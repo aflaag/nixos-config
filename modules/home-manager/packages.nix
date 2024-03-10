@@ -19,6 +19,7 @@
     ripgrep
     fzf
     htop
+    zoxide
 
     # coding stuff
     git

@@ -17,6 +17,10 @@
       rebuild-laptop = "sudo nixos-rebuild switch --flake /home/aless/.config/nixos-config#laptop";
     };
 
+    interactiveShellInit = ''
+      eval "$(zoxide init --cmd cd zsh)"
+    '';
+
     ohMyZsh.enable = true;
     ohMyZsh.plugins = ["git"];
     ohMyZsh.theme = "robbyrussell";
