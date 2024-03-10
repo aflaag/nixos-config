@@ -10,7 +10,7 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      l = "ls -l";
+      l = "ls -la";
       rm = "rm -i";
 
       # TODO: can we take arguments?
