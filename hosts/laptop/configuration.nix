@@ -97,6 +97,8 @@
       libraries = with pkgs; [];
   };
 
+  fonts.fonts = [ pkgs.cm_unicode ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
