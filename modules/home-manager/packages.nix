@@ -28,5 +28,6 @@
     # progams
     firefox
     speedcrunch
+    libreoffice
   ];
 }
