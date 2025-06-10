@@ -13,12 +13,13 @@
       l = "ls -la";
       rm = "rm -i";
 
-      # TODO: can we take arguments?
       rebuild-laptop = "sudo nixos-rebuild switch --flake /home/aless/.config/nixos-config#laptop";
     };
 
     interactiveShellInit = ''
       eval "$(zoxide init --cmd cd zsh)"
+
+      $HOME/.cache/pokemon-icat/pokemon-icat
     '';
 
     ohMyZsh.enable = true;

@@ -24,11 +24,5 @@
 
 - remove nodejs (?)
 
-- what goes into modules/nixos exactly?
-
 - fix battery life, still goes down kind of quickly even with auto-cpufreq on
-
-### python
-
-- how do i setup pokemon icat without having global packages? can i even do that?
 
