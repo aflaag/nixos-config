@@ -1,12 +1,29 @@
 # .config-nixos
 
+## Useful commands
+
+### Clean
+
+`nix-collect-garbage`
+
+### Repair damaged stored stuff
+
+`sudo nix-store --verify --check-contents --repair --verbose`
+
+### Update flakes
+
+`cd ~/.config/nixos-config && nix flake update`
+
+### Rebuild
+
+`sudo nixos-rebuild switch --flake /home/aless/.config/nixos-config#laptop`
+
 ## To fix
 
 ### general
 
 - remove nodejs
 
-- fix my github account on the laptop???
 - make nixos-config repo and use git submodule
 
 - what goes into modules/nixos exactly?
