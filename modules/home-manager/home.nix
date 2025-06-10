@@ -80,4 +80,17 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  # Change default applications
+  xdg.mimeApps = {
+    enable = true;
+
+    associations.added = {
+      "application/pdf" = ["firefox.desktop"];
+    };
+
+    defaultApplications = {
+      "application/pdf" = ["firefox.desktop"];
+    };
+  };
 }
