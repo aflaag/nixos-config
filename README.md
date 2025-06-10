@@ -2,21 +2,19 @@
 
 ## Useful commands
 
-### Clean
+### System
 
-`nix-collect-garbage`
-
-### Repair damaged stored stuff
-
-`sudo nix-store --verify --check-contents --repair --verbose`
-
-### Update flakes
-
-`cd ~/.config/nixos-config && nix flake update`
-
-### Rebuild
-
-`sudo nixos-rebuild switch --flake /home/aless/.config/nixos-config#laptop`
+- clean
+    - `nix-collect-garbage`
+- repair damaged stored stuff
+    - `sudo nix-store --verify --check-contents --repair --verbose`
+- update flakes
+    - `cd ~/.config/nixos-config && nix flake update`
+- rebuild and switch
+    - `sudo nixos-rebuild switch --flake /home/aless/.config/nixos-config#laptop`
+- misc
+    - connect gh cli
+        - `nix-shell -p gh` and login there
 
 ## To fix
 
