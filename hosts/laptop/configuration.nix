@@ -46,8 +46,8 @@
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.desktopManager.gnome.enable = true;
+  services.displayManager.gdm.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
@@ -63,7 +63,7 @@
 
   # Enable sound with pipewire.
   # sound.enable = true;
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -81,6 +81,7 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  # Disable in favor of auto-cpufreq
   services.power-profiles-daemon.enable = false;
 
   # enable flakes
@@ -99,7 +100,7 @@
       libraries = with pkgs; [];
   };
 
-  fonts.fonts = [ pkgs.cm_unicode ];
+  fonts.packages = [ pkgs.cm_unicode ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
